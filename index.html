@@ -3,7 +3,7 @@
   <head>
     <title>Solar Carbon Calc</title>
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
-
+  
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -64,7 +64,7 @@
             <td rowspan="2" style="width: fit-content;"><input type="text" id="in1" oninput="validateNumber1(this)" /></td>
           </tr>
           <tr>
-            <td><small>kWh per month</small></td>
+            <td><small>kWh/month</small></td>
           </tr>
         </table>
         <table style="width:100%">
@@ -87,7 +87,7 @@
             <td rowspan="2" style="width: fit-content;"><input type="text" id="in2"  oninput="validateNumber2(this)"/></td>
           </tr>
           <tr>
-            <td><small>$ per kWh</small></td>
+            <td><small>$/kWh</small></td>
           </tr>
         </table>
         <table style="width:100%">
@@ -119,7 +119,7 @@
             <td style="width: 3%;"></td>
             <td><button class="accordion2" style="width:fit-content;height:fit-content;"> <img src="pics/infocream.svg" aria-hidden="true" class="infocircle"></svg></button>
               <div class="panel2">
-                Portion of monthly energy usage planned to be covered by solar energy. Adding battery storage is advisable for coverage above 40%, but this will largely depend on your solar panel provider.
+                Portion of monthly energy consumptions planned to be covered by solar energy. Adding battery storage is advisable for coverage above 40%, but this will largely depend on your solar panel provider.
               </div>     
               </td>
             </tr>
@@ -142,7 +142,7 @@
             <td style="width: 3%;"></td>
             <td><button class="accordion2" style="width:fit-content;height:fit-content;"> <img src="pics/infocream.svg" aria-hidden="true" class="infocircle"></svg></button>
               <div class="panel2">
-                Period of time where the intensity of sunlight is at its peak in your local region. The daily total of peak sun hours for each region can be seen on this <a href="pics/PVmap.png" target="_blank"><u>map</u></a> (range of 2.0-6.4).<sup>[1]</sup>
+                Period where the sunlight intensity is at its peak in your local region. The daily total of peak sun hours for each region can be seen on this <a href="pics/PVmap.png" target="_blank"><u>map</u></a> (range of 2.0-6.4).<sup>[1]</sup>
               </div>     
               </td>
             </tr>
@@ -168,7 +168,7 @@
             <td style="width: 3%;"></td>
             <td><button class="accordion2" style="width:fit-content;height:fit-content;"> <img src="pics/infocream.svg" aria-hidden="true" class="infocircle"></svg></button>
               <div class="panel2">
-                Battery storage might increase investment costs and return period significantly in return of higher energy coverage capability, which also further reduce carbon emission. For solar energy coverage of above 40%, it is advisable to add energy storage.
+                Battery storage might significantly increase investment costs and return period in return of higher energy coverage capability, which further reduce carbon emission. For solar energy coverage of above 40%, it is advisable to add energy storage.
               </div>     
               </td>
             </tr>
@@ -189,7 +189,7 @@
               <td rowspan="2" style="width: fit-content;"> <div style="font-size: 12px; text-align: right;"><i>battery storage on</i></div> <input type="text" id="in7" value="3" oninput="validateNumber7(this)"/></td>
             </tr>
             <tr>
-              <td><small>$ per Watt</small></td>
+              <td><small>$/Watt</small></td>
             </tr>
           </table>
           <div class="quarterBR"></div>
@@ -198,7 +198,7 @@
               <td style="width: 3%;"></td>
               <td><button type="button" class="accordion2" style="width:fit-content;height:fit-content;"> <img src="pics/infocream.svg" aria-hidden="true" class="infocircle"></svg></button>
                 <div class="panel2">
-                  2020 global industry average for solar panel installation is around 1-2 $/Watt without battery storage and around 2-4 $/Watt with battery. Consult your local solar panel provider for a precise $/Watt ratio. Note that only one of the two columns needs to be filled depending on whether or not you opt to add battery storage.
+                  2020 global average for solar panel installation is approximately 1-2 $/Watt without storage and 2-4 $/Watt with storage. Consult your local solar panel provider for exact $/Watt ratios. Note that only one of the two columns needs to be filled depending on whether battery storage is off or on.
                 </div>     
                 </td>
               </tr>
@@ -221,7 +221,7 @@
               <td style="width: 3%;"></td>
               <td><button type="button" class="accordion2" style="width:fit-content;height:fit-content;"> <img src="pics/infocream.svg" aria-hidden="true" class="infocircle"></svg></button>
                 <div class="panel2">
-                  Typical solar panel lifespan is around 20-30 years, with an average of 25 years.<sup>[2]</sup>
+                  Typical solar panel lifespan is 20-30 years, with an average of 25 years.<sup>[2]</sup>
                 </div>     
                 </td>
               </tr>
@@ -244,7 +244,7 @@
               <td style="width: 3%;"></td>
               <td><button type="button" class="accordion2" style="width:fit-content;height:fit-content;"> <img src="pics/infocream.svg" aria-hidden="true" class="infocircle"></svg></button>
                 <div class="panel2">
-                  Coefficient for system losses ranges between 0.5-0.9 with a default value of 0.75. Examples of performance losses in real-world application are from shadings, inverters, cables, system temperature and other losses.<sup>[3]</sup> 
+                  Coefficient for system losses ranges between 0.5-0.9, with a default value of 0.75. Examples of performance losses in real-world applications are from shadings, inverters, cables, and system temperature.<sup>[3]</sup> 
                 </div>     
                 </td>
               </tr>
@@ -259,7 +259,7 @@
               <td rowspan="2" style="width: fit-content;"><input type="text" id="in10" value="0.37" oninput="validateNumber10(this)"/></td>
             </tr>
             <tr>
-              <td><small>kgCO<sub>2</sub>eq per kWh</small></td>
+              <td><small>kgCO<sub>2</sub>eq/kWh</small></td>
             </tr>
           </table>
           <table style="width:100%">
@@ -282,7 +282,7 @@
               <td rowspan="2" style="width: fit-content;"><input type="text" id="in11" value="0.03" oninput="validateNumber11(this)"/></td>
             </tr>
             <tr>
-              <td><small>kgCO<sub>2</sub>eq per kWh</small></td>
+              <td><small>kgCO<sub>2</sub>eq/kWh</small></td>
             </tr>
           </table>
           <table style="width:100%">
@@ -290,7 +290,7 @@
               <td style="width: 3%;"></td>
               <td><button type="button" class="accordion2" style="width:fit-content;height:fit-content;"> <img src="pics/infocream.svg" aria-hidden="true" class="infocircle"></svg></button>
                 <div class="panel2">
-                  Emission factors for electricity production with photovoltaics.<sup>[4]</sup> 
+                  Emission factor for electricity production with photovoltaics.<sup>[4]</sup> 
                 </div>     
               </td>
             </tr>
@@ -311,7 +311,7 @@
         <button class="execute" onclick="calc();">CALCULATE</button> 
         <div class="halfBR"></div>
         <div class="halfBR"></div>
-        <div id="snackbar"><i>MISSING OR INVALID PARAMETER VALUE, PLEASE INPUT VALID DATA</i></div>
+        <div id="snackbar"><i>MISSING OR INVALID PARAMETER, PLEASE INPUT VALID DATA</i></div>
       </div>
       
       
@@ -333,7 +333,7 @@
             <td style="width: 3%;"></td>
             <td><button type="button" class="accordion2" style="width:fit-content;height:fit-content;"> <img src="pics/infocream.svg" aria-hidden="true" class="infocircle"></svg></button>
               <div class="panel2">
-                Size of PV system to daily supply the chosen energy coverage percentage.
+                Size of PV system to daily supply the energy coverage percentage.
               </div>     
             </td>
           </tr>
@@ -347,7 +347,7 @@
             <td rowspan="2" style="width: fit-content;"><output class = "result" type="text" id="save2">&nbsp;</output></td>
           </tr>
           <tr>
-            <td><small>kWh per year</small></td>
+            <td><small>kWh/year</small></td>
           </tr>
         </table>
         <table style="width:100%">
@@ -355,7 +355,7 @@
             <td style="width: 3%;"></td>
             <td><button type="button" class="accordion2" style="width:fit-content;height:fit-content;"> <img src="pics/infocream.svg" aria-hidden="true" class="infocircle"></svg></button>
               <div class="panel2">
-                Total yearly energy generated from PV system.
+                Total yearly energy generated from the PV system.
               </div>     
             </td>
           </tr>
@@ -369,7 +369,7 @@
             <td rowspan="2" style="width: fit-content;"><output class = "result" type="text" id="save3">&nbsp;</output></td>
           </tr>
           <tr>
-            <td><small>kWh per year</small></td>
+            <td><small>kWh/year</small></td>
           </tr>
         </table>
         <table style="width:100%">
@@ -377,7 +377,7 @@
             <td style="width: 3%;"></td>
             <td><button type="button" class="accordion2" style="width:fit-content;height:fit-content;"> <img src="pics/infocream.svg" aria-hidden="true" class="infocircle"></svg></button>
               <div class="panel2">
-                Rest of total yearly energy that needs to be covered by the grid.
+                Total yearly energy demand remaining to be covered by the grid.
               </div>     
             </td>
           </tr>
@@ -419,7 +419,7 @@
             <td rowspan="2" style="width: fit-content;"><output class = "result" type="text" id="save5">&nbsp;</output></td>
           </tr>
           <tr>
-            <td><small>$ per year</small></td>
+            <td><small>$/year</small></td>
           </tr>
         </table>
         <table style="width:100%">
@@ -427,7 +427,7 @@
             <td style="width: 3%;"></td>
             <td><button type="button" class="accordion2" style="width:fit-content;height:fit-content;"> <img src="pics/infocream.svg" aria-hidden="true" class="infocircle"></svg></button>
               <div class="panel2">
-                Yearly cost of grid electricity, influenced by the percentage of solar energy coverage. 
+                Yearly electric bill from the grid, reduced by the portion of solar energy coverage. 
               </div>     
             </td>
           </tr>
@@ -449,7 +449,7 @@
             <td style="width: 3%;"></td>
             <td><button type="button" class="accordion2" style="width:fit-content;height:fit-content;"> <img src="pics/infocream.svg" aria-hidden="true" class="infocircle"></svg></button>
               <div class="panel2">
-                Total cost of PV system and grid electricity throughout the lifespan of the system
+                Total cost of PV system and grid electricity throughout the lifespan of the system.
               </div>     
             </td>
           </tr>
@@ -472,7 +472,7 @@
             <td style="width: 3%;"></td>
             <td><button type="button" class="accordion2" style="width:fit-content;height:fit-content;"> <img src="pics/infocream.svg" aria-hidden="true" class="infocircle"></svg></button>
               <div class="panel2">
-                Total savings throughout the lifespan of the PV system compared to electricity purchased fully from the grid.
+                Total savings throughout the lifespan of the PV system, compared to if electricity was fully purchased from the grid.
               </div>     
             </td>
           </tr>
@@ -482,11 +482,11 @@
           <tr>
             <td rowspan="2" style="width: 3%;">
             </td>
-            <td>Yearly Electric Bill Savings</td>
+            <td>Annual Electric Bill Savings</td>
             <td rowspan="2" style="width: fit-content;"><output class = "result" type="text" id="save8">&nbsp;</output></td>
           </tr>
           <tr>
-            <td><small>$ per year</small></td>
+            <td><small>$/year</small></td>
           </tr>
         </table>
         <table style="width:100%">
@@ -494,7 +494,7 @@
             <td style="width: 3%;"></td>
             <td><button type="button" class="accordion2" style="width:fit-content;height:fit-content;"> <img src="pics/infocream.svg" aria-hidden="true" class="infocircle"></svg></button>
               <div class="panel2">
-                Yearly savings of electric bill with added PV system compared to electricity purchased fully from the grid.
+                Yearly electric bill savings with the PV system, compared to if electricity was fully purchased from the grid.
               </div>     
             </td>
           </tr>
@@ -508,11 +508,11 @@
             <td rowspan="2" style="width: fit-content;"><output class = "result" type="text" id="save9">&nbsp;</output></td>
           </tr>
           <tr>
-            <td><small>$ per kWh</small></td>
+            <td><small>$/kWh</small></td>
           </tr>
           <tr>
             <td style="width: 3%;">
-            <td style="font-size: 13px;">compared to without PV</td>
+            <td style="font-size: 13px;">compared to grid electricity</td>
             <td style="width: fit-content;"><output class = "resultComp" type="text" id="saveA">&nbsp;</output></td>
           </tr>
         </table>
@@ -522,7 +522,7 @@
             <td style="width: 3%;"></td>
             <td><button type="button" class="accordion2" style="width:fit-content;height:fit-content;"> <img src="pics/infocream.svg" aria-hidden="true" class="infocircle"></svg></button>
               <div class="panel2">
-                Equivalent electricity cost per kWh with added PV system.
+                Equivalent electricity cost per kWh with the PV system.
               </div>     
             </td>
           </tr>
@@ -543,7 +543,7 @@
             <td style="width: 3%;"></td>
             <td><button type="button" class="accordion2" style="width:fit-content;height:fit-content;"> <img src="pics/infocream.svg" aria-hidden="true" class="infocircle"></svg></button>
               <div class="panel2">
-                A reasonable RoI period would be below the system's lifespan. RoI period can be lower if your region has solar panel-related government incentives, such as the federal solar tax credit.
+                Expected ROI period of the PV system. A reasonable ROI would be below the system's lifespan. ROI period can be faster if your region has solar panel-related government incentives, such as the US federal solar tax credit.
               </div>     
             </td>
           </tr>
@@ -562,11 +562,11 @@
             <td rowspan="2" style="width: fit-content;"><output class = "result" type="text" id="car2">&nbsp;</output></td>
           </tr>
           <tr>
-            <td><small>kgCO<sub>2</sub>eq per year</small></td>
+            <td><small>kgCO<sub>2</sub>eq/year</small></td>
           </tr>
           <tr>
             <td style="width: 3%;">
-            <td style="font-size: 13px;">compared to without PV</td>
+            <td style="font-size: 13px;">compared to grid electricity</td>
             <td style="width: fit-content;"><output class = "resultComp" type="text" id="car1">&nbsp;</output></td>
           </tr>
         </table>
@@ -576,7 +576,7 @@
             <td style="width: 3%;"></td>
             <td><button type="button" class="accordion2" style="width:fit-content;height:fit-content;"> <img src="pics/infocream.svg" aria-hidden="true" class="infocircle"></svg></button>
               <div class="panel2">
-                Yearly CO<sub>2</sub> emission with added PV system.
+                Yearly CO<sub>2</sub> emission with the PV system.
               </div>     
             </td>
           </tr>
@@ -587,11 +587,11 @@
             <td rowspan="2" style="width: 3%;">
             
             </td>
-            <td>Yearly CO<sub>2</sub> Prevented</td>
+            <td>Annual CO<sub>2</sub> Prevention</td>
             <td rowspan="2" style="width: fit-content;"><output class = "result" type="text" id="car3">&nbsp;</output></td>
           </tr>
           <tr>
-            <td><small>kgCO<sub>2</sub>eq per year</small></td>
+            <td><small>kgCO<sub>2</sub>eq/year</small></td>
           </tr>
         </table>
         <table style="width:100%">
@@ -599,7 +599,7 @@
             <td style="width: 3%;"></td>
             <td><button type="button" class="accordion2" style="width:fit-content;height:fit-content;"> <img src="pics/infocream.svg" aria-hidden="true" class="infocircle"></svg></button>
               <div class="panel2">
-                Yearly CO<sub>2</sub> emission prevented compared to electricity purchased fully from the grid.
+                Yearly CO<sub>2</sub> emission prevented, compared to if electricity was fully purchased from the grid.
               </div>     
             </td>
           </tr>
@@ -609,7 +609,7 @@
           <tr>
             <td rowspan="2" style="width: 3%;">
             </td>
-            <td>Lifetime CO<sub>2</sub> Prevented  <output class="lifetime1" id="lifetime3"/> </td>
+            <td>Lifetime CO<sub>2</sub> Prevention  <output class="lifetime1" id="lifetime3"/> </td>
             <td rowspan="2" style="width: fit-content;"><output class = "result" type="text" id="car4">&nbsp;</output></td>
           </tr>
           <tr>
@@ -621,7 +621,7 @@
             <td style="width: 3%;"></td>
             <td><button type="button" class="accordion2" style="width:fit-content;height:fit-content;"> <img src="pics/infocream.svg" aria-hidden="true" class="infocircle"></svg></button>
               <div class="panel2">
-                CO<sub>2</sub> emission prevented throught the lifespan of the PV system.
+                CO<sub>2</sub> emission prevented throughout the lifespan of the PV system.
               </div>     
             </td>
           </tr>
@@ -653,8 +653,8 @@
         <h5>About</h5>
         <p style="font-size: 14px; text-align: justify;">
           This PWA (Progressive Web App) was made by a master graduate in sustainable buildings to help estimate investments on solar panel installation. 
-          Along with capital and operational costs and savings, this tool also emphasizes on the prevention of carbon emission that comes with utilizing solar energy. 
-          The overall goal is to support the continuously increasing adoption rate of solar panel towards a global clean energy future.
+          Along with the capital and operational costs and savings, this tool also emphasizes the prevention of carbon emission that comes with utilizing solar energy. 
+          The overall goal is to support the continuously increasing adoption rate of solar panels towards a global clean energy future.
           <div style="text-align: right;">- CCK</div>
 
         </p>
