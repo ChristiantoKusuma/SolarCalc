@@ -147,9 +147,9 @@ function calc()
         var car2 = (save2*in11+save3*in10);
         var car3 = (car1-car2);
         var car4 = ((car1-car2)*in8);
-        var trees = (Math.round(car4/(23)* 1) / 1).toLocaleString(); //20kg/year * 25 years lifetime * 10% mortality rate
-        var plastic = (Math.round(car4/0.025* 1) / 1).toLocaleString() ;
-        var cartrip = (Math.round(car4*3.983/40075 * 10) / 10).toLocaleString();
+        var trees = (car4/23); //20kg/year * 25 years lifetime * 10% mortality rate
+        var plastic = (car4/0.025);
+        var cartrip = (car4*3.983/40075);
 
         // 35.4 km/gallon
         // 8.887 kgco2 /gallon
@@ -173,6 +173,9 @@ function calc()
         car2 = car2 || 0
         car3 = car3 || 0
         car4 = car4 || 0
+        trees = trees || 0
+        plastic = plastic || 0
+        cartrip = cartrip || 0
 
 
         document.getElementById('save1').value = (Math.round(save1* 100) / 100).toLocaleString();
@@ -196,7 +199,9 @@ function calc()
         document.getElementById('car3').value= (Math.round(car3* 1) / 1).toLocaleString();
         document.getElementById('car4').value= (Math.round(car4* 1) / 1).toLocaleString();
 
-        document.getElementById('carboneqtext').value = "The lifetime carbon emission prevented is the equivalent of planting " + trees + " trees" + " or avoiding the use of " + plastic + " plastic bags. It is also comparable to driving a gasoline car around the world " + cartrip + " times.";
+        document.getElementById('carboneqtext1').value = "Planting " + (Math.round(trees* 1) / 1).toLocaleString() + " trees";
+        document.getElementById('carboneqtext2').value = "Avoiding the use of " + (Math.round(plastic* 1) / 1).toLocaleString() + " plastic bags"; 
+        document.getElementById('carboneqtext3').value = "Driving a gas-powered car around the world " + (Math.round(cartrip* 10) / 10).toLocaleString() + " times";
 
        
         if (save7 == 0) {

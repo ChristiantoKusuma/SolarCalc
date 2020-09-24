@@ -59,7 +59,7 @@ body, html {
 }
 
 ul {
-    background-color: rgb(39, 75, 105);
+    background-color: rgb(57, 65, 78); /*dark blue 'rgb(39, 75, 105)' previously*/
 }
 
 k {
@@ -451,11 +451,11 @@ height: 40px !important;
   }
   
   input:checked + .slider {
-    background-color: rgb(63, 75, 105);
+    background-color: rgb(39, 75, 105);
   }
   
   input:focus + .slider {
-    box-shadow: 0 0 1px rgb(63, 75, 105);
+    box-shadow: 0 0 1px rgb(39, 75, 105);
   }
   
   input:checked + .slider:before {

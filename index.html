@@ -311,7 +311,7 @@
         <button class="execute" onclick="calc();">CALCULATE &#10097;&#10097;</button> 
         <div class="halfBR"></div>
         <div class="halfBR"></div>
-        <div id="snackbar"><i>MISSING OR INVALID PARAMETER, PLEASE INPUT VALID DATA</i></div>
+        <div id="snackbar"><i>MISSING OR INVALID PARAMETER <br> PLEASE INPUT VALID DATA</i></div>
       </div>
       
       
@@ -653,17 +653,53 @@
             </td>
           </tr>
         </table>
+
+        
         <table style="width:100%">
           <tr>
-            <td rowspan="1" style="width: 3.5%;">
+            <td rowspan="1" style="width: 3%;">
+            </td>
+            <td style="font-size: 14px; font-style: italic;">
+              The lifetime carbon emission prevented is equivalent to:  
+            </td>
+          </tr>
+        </table>
+        
+        <table style="width:100%">
+          <tr>
+            <td rowspan="1" style="width: 3%;">
             </td>
             <td rowspan="1" style="width: 4%;vertical-align: top;">
               <svg width="12" height="20">
-              <circle cx="6" cy="10" r="3" stroke= 'rgba(112, 106, 91,0.6)' stroke-width="2" fill="rgba(245, 245, 245, 0.97)" />
+              <circle cx="6" cy="10" r="3" stroke= 'rgb(57, 65, 78)' stroke-width="2" fill="rgba(245, 245, 245, 0.97)" />
               </svg>
             </td>
-            <td style="width:fit-content;height:fit-content;text-align: justify;padding-right: 2%;padding-top: 4px;font-size: 13px;">
-              <output class="carboneq" id="carboneqtext"/> <i>Carbon savings equivalent</i>      
+            <td style="width:fit-content;height:fit-content;text-align: justify;padding-right: 2%;padding-top: 4px;font-size: 13px; font-style: italic;">
+              <output class="carboneq" id="carboneqtext1"/> Planting 0 trees
+            </td>
+          </tr>
+          <tr>
+            <td rowspan="1" style="width: 3%;">
+            </td>
+            <td rowspan="1" style="width: 4%;vertical-align: top;">
+              <svg width="12" height="20">
+              <circle cx="6" cy="10" r="3" stroke= 'rgb(57, 65, 78)' stroke-width="2" fill="rgba(245, 245, 245, 0.97)" />
+              </svg>
+            </td>
+            <td style="width:fit-content;height:fit-content;text-align: justify;padding-right: 2%;padding-top: 4px;font-size: 13px; font-style: italic;">
+              <output class="carboneq" id="carboneqtext2"/> Avoiding the use of 0 plastic bags
+            </td>
+          </tr>
+          <tr>
+            <td rowspan="1" style="width: 3%;">
+            </td>
+            <td rowspan="1" style="width: 4%;vertical-align: top;">
+              <svg width="12" height="20">
+              <circle cx="6" cy="10" r="3" stroke= 'rgb(57, 65, 78)' stroke-width="2" fill="rgba(245, 245, 245, 0.97)" />
+              </svg>
+            </td>
+            <td style="width:fit-content;height:fit-content;text-align: justify;padding-right: 2%;padding-top: 4px;font-size: 13px; font-style: italic;">
+              <output class="carboneq" id="carboneqtext3"/> Driving a gas-powered car around the world 0 times
             </td>
           </tr>
         </table>
