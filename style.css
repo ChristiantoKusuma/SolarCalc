@@ -165,8 +165,8 @@ height: 40px !important;
     padding-right: 4px;
     width:100px;
     border-radius: 16px;
-    background-color: rgb(78, 76, 76);
-    color: white;
+    background-color:rgb(255, 255, 255);
+    color: black;
   }
 
   .resform{
@@ -208,8 +208,8 @@ height: 40px !important;
     padding-right: 5px;
     padding-bottom: 2px;
     min-width:80px;
-    background-color:rgb(78, 76, 76);
-    border: 0px solid whitesmoke;
+    background-color:rgba(78, 76, 76, 0.85);
+    border: 2px solid rgba(245, 245, 245, 0.6);
     border-radius: 16px;
     color: whitesmoke;
   }
@@ -260,11 +260,56 @@ height: 40px !important;
     border-radius: 4px;
     transition: 250ms;
   }
+
+  .prev{
+    float: right;
+    background-color:rgb(57, 65, 78);
+    color: whitesmoke;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    padding: 3px 8px;
+    font-size: 16px;
+    border-radius: 4px;
+    transition: 250ms;
+  }
+
+  .prevmid{
+    margin: 0;
+    position: relative;
+    left: 50%;
+    -ms-transform: translate(-50%);
+    transform: translate(-50%);
+    background-color:rgb(57, 65, 78);
+    color: whitesmoke;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    padding: 3px 8px;
+    font-size: 16px;
+    border-radius: 4px;
+    transition: 250ms;
+  }
+
+  .next{
+    float: left;
+    background-color:rgb(57, 65, 78);
+    color: whitesmoke;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    padding: 3px 8px;
+    font-size: 16px;
+    border-radius: 4px;
+    transition: 250ms;
+  }
+
   
   .execute:hover {
     background-color: rgba(81, 92, 111, 0.95)
   }
   
+  .prev:hover {
+    background-color: rgba(81, 92, 111, 0.95)
+  }
+
+  .next:hover {
+    background-color: rgba(81, 92, 111, 0.95)
+  }
 
 
 

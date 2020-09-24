@@ -147,7 +147,7 @@ function calc()
         var car2 = (save2*in11+save3*in10);
         var car3 = (car1-car2);
         var car4 = ((car1-car2)*in8);
-        var trees = (Math.round(car4/21.7724* 1) / 1).toLocaleString();
+        var trees = (Math.round(car4/(23)* 1) / 1).toLocaleString(); //20kg/year * 25 years lifetime * 10% mortality rate
         var plastic = (Math.round(car4/0.025* 1) / 1).toLocaleString() ;
         var cartrip = (Math.round(car4*3.983/40075 * 10) / 10).toLocaleString();
 
@@ -219,7 +219,35 @@ function calc()
 
       }
         
+
+
+
+
+
     }
 
 
-    
+function TwoToOne()
+{
+  document.getElementById("input-tab").click();
+}
+
+function TwoToThree()
+{
+  document.getElementById("savings-tab").click();
+}
+
+function ThreeToTwo()
+{
+  document.getElementById("system-tab").click();
+}
+
+function ThreeToFour()
+{
+  document.getElementById("carbon-tab").click();
+}
+
+function FourToThree()
+{
+  document.getElementById("savings-tab").click();
+}
